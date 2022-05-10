@@ -1,0 +1,40 @@
+/* main mobile theme */
+* {
+    font-size: 16px;
+}
+
+body {
+    background-color: #3A4663;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* header with app name and theme selector button */
+.header {
+    grid-column: 1 / span 6;
+}
+
+/* app name */
+.header p {
+    font-family: 'league spartan', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+/* calculator readout */
+#readout {
+
+}
+
+/* calculator body set as a grid  */
+.calculatorGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+
+}
