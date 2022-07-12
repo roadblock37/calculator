@@ -1,6 +1,115 @@
+/* color variables */
+:root {
+/* theme 1 */
+
+    /* backgrounds */
+    --mainBackground: hsl(222, 26%, 31%);
+    --toggleBackground: hsl(223, 31%, 20%);
+    --keypadBackground: hsl(223, 31%, 20%);
+    --screenBackground: hsl(224, 36%, 15%);
+
+    /* keys */
+    --keyBackground: hsl(225, 21%, 49%);
+    --keyShadow: hsl(224, 28%, 35%);
+
+    /* key background/toggle */
+    --red: hsl(6, 63%, 50%);
+
+    /* red key shadow */
+    --darkRed: hsl(6, 70%, 34%);
+    /* Light grayish orange key background */
+
+    --lightGrayOrange: hsl(30, 25%, 89%);
+
+    /* gray orange key shadow */
+    --grayOrangeKeyShadow: hsl(28, 16%, 65%);
+
+    /* text */
+
+    /* very dark grayish blue */
+    --grayBlue: hsl(221, 14%, 31%);
+    --white: hsl(0, 0, 100%);
+
+/* theme 2 */
+
+    /* backgrounds */
+    --t2MainBackground: hsl(0, 0%, 90%);
+
+    /* theme 2 toggle background, keypad background */
+    --t2GrayRed: hsl(0, 5%, 81%);
+
+    /* theme 2 screen background */
+    --t2LightGray: hsl(0, 0%, 93%);
+
+    /* keys */
+
+    /* key background dark moderate cyan */
+    --t2KeyBackground: hsl(185, 42%, 37%);
+
+    /* very dark cyan key shadow */
+    --t2CyanKeyShadow: hsl(185, 58%, 25%);
+
+    /* theme 2 orange key background, toggle */
+    --t2Orange: hsl(25, 98%, 40%);
+
+    /* theme 2 dark orange key shadow */
+    --t2OrangeKeyShadow: hsl(25, 99%, 27%);
+
+    /* theme 2 grayish yellow key background */
+    --t2YlwKeyBackground: hsl(45, 7%, 89%);
+
+    /* theme 2 dark grayish orange key shadow */
+    --t2GrayOrangeKeyShadow: hsl(35, 11%, 61%);
+
+    /* text */
+    /* very dark grayish yellow */
+    --t2Text: hsl(60, 10%, 19%);
+
+/* Theme 3 */
+
+    /* backgrounds */
+
+    /* very dark violet */
+    --t3Background: hsl(268, 75%, 9%);
+
+    /* theme 3 toggle background, keypad background, screen background */
+    --t3SecondaryBackground: hsl(268, 71%, 12%);
+
+    /* keys */
+
+    /* dark violet key background */
+    --t3KeyBackground: hsl(281, 89%, 26%);
+
+    /* theme 3 vivid magenta key shadow */
+    --t3MagentaKeyShadow: hsl(285, 91%, 52%);
+
+    /* theme 3 cyan key background, toggle */
+    --t3CyanKey: hsl(176, 100%, 44%);
+
+    /* theme 3 cyan key shadow */
+    --t3CyanKeyShadow: hsl(177, 92%, 70%);
+
+    /* theme 3 very dark violet key background */
+    --t3VioletKeyBackground: hsl(268, 47%, 21%);
+
+    /* theme 3 dark magenta key shadow */
+    --t3DarkMagentaKeyShadow: hsl(290, 70%, 36%);
+
+    /* text */
+    /* theme 3 light yellow */
+    --t3YlwText: hsl(52, 100%, 62%);
+
+    /* theme 3 very dark blue */
+    --t3BlueText: hsl(198, 20%, 13%);
+}
+
+
 /* main mobile theme */
 * {
-    font-size: 16px;
+    font-size: 32px;
+    font-family: 'league spartan', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,18 +125,12 @@ body {
 
 /* app name */
 .header p {
-    font-family: 'league spartan', sans-serif;
     font-size: 2rem;
-    font-weight: bold;
     color: #ffffff;
     margin-left: 2rem;
     margin-top: 3rem;
 }
 
-/* calculator readout */
-#readout {
-
-}
 
 /* calculator body set as a grid  */
 .calculatorGrid {
@@ -36,5 +139,8 @@ body {
     column-gap: 1rem;
     row-gap: 1rem;
 
+}
 
+.output {
+    
 }
