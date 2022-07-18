@@ -148,7 +148,22 @@ body {
     grid-column: 1 / -1;
     height: 2rem;
     margin-bottom: 1rem;
+   display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /* word-wrap: break-word;
+    word-break: break-all; */
 
+}
+
+.previous-operand {
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.current-operand {
+    color: #ffffff;
+    font-size: 1rem;
 }
 
 /* sets a grid for calculator buttons */
@@ -181,7 +196,7 @@ button:hover {
     max-width: 120px;
 }
 
-.clear {
+.equal {
     grid-column: 3 / span 2;
     max-width: 120px;
     
