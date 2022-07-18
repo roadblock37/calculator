@@ -121,14 +121,14 @@ body {
 
 /* header with app name and theme selector button */
 .header {
-    grid-column: 1 / span 6;
+    grid-column: 2 / span 3;
 }
 
 /* app name */
 .header p {
-    font-size: 2rem;
+    font-size: 0.75rem;
     color: #ffffff;
-    margin-left: 2rem;
+    margin-left: 0.5em;
     margin-top: 3rem;
 }
 
