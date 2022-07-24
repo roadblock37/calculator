@@ -1,8 +1,8 @@
 
 /* color variables */
-:root {
-/* theme 1 */
+ 
 
+:root {
     /* backgrounds */
     --mainBackground: hsl(222, 26%, 31%);
     --toggleBackground: hsl(223, 31%, 20%);
@@ -10,98 +10,105 @@
     --screenBackground: hsl(224, 36%, 15%);
 
     /* keys */
-    --keyBackground: hsl(225, 21%, 49%);
-    --keyShadow: hsl(224, 28%, 35%);
+    --secondaryKeyBackground: hsl(225, 21%, 49%);
+    --secondaryKeyShadow: hsl(224, 28%, 35%);
 
     /* key background/toggle */
-    --red: hsl(6, 63%, 50%);
+    --equalKey: hsl(6, 63%, 50%);
 
     /* red key shadow */
-    --darkRed: hsl(6, 70%, 34%);
+    --equalKeyShadow: hsl(6, 70%, 34%);
     /* Light grayish orange key background */
 
-    --lightGrayOrange: hsl(30, 25%, 89%);
+    --mainKeyBackground: hsl(30, 25%, 89%);
 
     /* gray orange key shadow */
-    --grayOrangeKeyShadow: hsl(28, 16%, 65%);
+    --mainKeyShadow: hsl(28, 16%, 65%);
 
     /* text */
 
     /* very dark grayish blue */
-    --grayBlue: hsl(221, 14%, 31%);
+    --mainText: hsl(221, 14%, 31%);
     --white: hsl(0, 0, 100%);
+}
 
-/* theme 2 */
-
+[data-theme='two']{
     /* backgrounds */
-    --t2MainBackground: hsl(0, 0%, 90%);
+    --mainBackground: hsl(0, 0%, 90%);
 
     /* theme 2 toggle background, keypad background */
-    --t2GrayRed: hsl(0, 5%, 81%);
+    --toggleBackground: hsl(0, 5%, 81%);
+    --keypadBackground: hsl(0, 5%, 81%);
+
 
     /* theme 2 screen background */
-    --t2LightGray: hsl(0, 0%, 93%);
+    --screenBackground: hsl(0, 0%, 93%);
 
     /* keys */
 
     /* key background dark moderate cyan */
-    --t2KeyBackground: hsl(185, 42%, 37%);
+    --secondaryKeyBackground: hsl(185, 42%, 37%);
 
     /* very dark cyan key shadow */
-    --t2CyanKeyShadow: hsl(185, 58%, 25%);
+    --secondaryKeyShadow: hsl(185, 58%, 25%);
 
     /* theme 2 orange key background, toggle */
-    --t2Orange: hsl(25, 98%, 40%);
+    --equalKeyShadow: hsl(25, 98%, 40%);
 
     /* theme 2 dark orange key shadow */
-    --t2OrangeKeyShadow: hsl(25, 99%, 27%);
+    --equalKey: hsl(25, 99%, 27%);
 
     /* theme 2 grayish yellow key background */
-    --t2YlwKeyBackground: hsl(45, 7%, 89%);
+    --mainKeyBackground: hsl(45, 7%, 89%);
 
     /* theme 2 dark grayish orange key shadow */
-    --t2GrayOrangeKeyShadow: hsl(35, 11%, 61%);
+    --mainKeyShadow: hsl(35, 11%, 61%);
 
     /* text */
     /* very dark grayish yellow */
-    --t2Text: hsl(60, 10%, 19%);
+    --mainText: hsl(60, 10%, 19%);
+    --white: hsl(0, 0, 100%);
 
-/* Theme 3 */
+}
 
-    /* backgrounds */
-
+[data-theme='three']{
     /* very dark violet */
-    --t3Background: hsl(268, 75%, 9%);
+    --mainBackground: hsl(268, 75%, 9%);
 
     /* theme 3 toggle background, keypad background, screen background */
-    --t3SecondaryBackground: hsl(268, 71%, 12%);
+    --toggleBackground: hsl(268, 71%, 12%);
+    --screenBackground: hsl(268, 71%, 12%);
+
 
     /* keys */
 
     /* dark violet key background */
-    --t3KeyBackground: hsl(281, 89%, 26%);
+    --secondaryKeyBackground: hsl(281, 89%, 26%);
 
     /* theme 3 vivid magenta key shadow */
-    --t3MagentaKeyShadow: hsl(285, 91%, 52%);
+    --secondaryKeyShadow: hsl(285, 91%, 52%);
 
     /* theme 3 cyan key background, toggle */
-    --t3CyanKey: hsl(176, 100%, 44%);
+    --equalKey: hsl(176, 100%, 44%);
 
     /* theme 3 cyan key shadow */
-    --t3CyanKeyShadow: hsl(177, 92%, 70%);
+    --equalKeyShadow: hsl(177, 92%, 70%);
 
     /* theme 3 very dark violet key background */
-    --t3VioletKeyBackground: hsl(268, 47%, 21%);
+    --mainKeyBackground: hsl(268, 47%, 21%);
 
     /* theme 3 dark magenta key shadow */
-    --t3DarkMagentaKeyShadow: hsl(290, 70%, 36%);
+    --mainKeyShadow: hsl(290, 70%, 36%);
 
     /* text */
     /* theme 3 light yellow */
-    --t3YlwText: hsl(52, 100%, 62%);
+    --mainText: hsl(52, 100%, 62%);
 
     /* theme 3 very dark blue */
     --t3BlueText: hsl(198, 20%, 13%);
+    --white: hsl(0, 0, 100%);
+
+
 }
 
 
@@ -114,7 +121,7 @@
 }
 
 body {
-    background-color: #3A4663;
+    background-color: var(--mainBackground);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
@@ -181,19 +188,19 @@ body {
 
 /* styles all buttons */
 button {
-    background-color: var(--lightGrayOrange);
+    background-color: var(--mainKeyBackground);
     border-radius: 5px;
     border: none;
     max-width: 60px;
     max-height: 64px;
     vertical-align: middle;
-    box-shadow: 0px 3px 1px var(--grayOrangeKeyShadow);
+    box-shadow: 0px 3px 1px var(--mainKeyShadow);
     
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 /* reset button placement */
@@ -206,9 +213,9 @@ button:hover {
 .equal {
     grid-column: 3 / span 2;
     max-width: 120px;
-    background-color: #D03F2F;
-    color: #ffffff;
-    box-shadow: 0px 3px 1px var(--darkRed);
+    background-color: var(--equalKey);
+    color: var(--white);
+    box-shadow: 0px 3px 1px var(--equalKeyShadow);
 }
 
 .equal:hover {
@@ -217,10 +224,10 @@ button:hover {
 
 /* reset and delete button color */
 .reset, .delete {
-    background-color: #647198;
-    color: #ffffff;
+    background-color: var(--secondaryKeyBackground);
+    color: var(--white);
     font-size: 0.5rem;
-    box-shadow: 0px 3px 1px var(--keyShadow);
+    box-shadow: 0px 3px 1px var(--secondaryKeyShadow);
 }
 
 .reset:hover, .delete:hover {
